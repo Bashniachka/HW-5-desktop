@@ -380,8 +380,7 @@ margin-bottom: 30px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    transition: background-color var(--main-transition-duration) var(--main-transition-timing),
-    color var(--main-transition-duration) var(--main-transition-timing);
+ 
 }
 
 .team-soc-link {
@@ -393,6 +392,8 @@ margin-bottom: 30px;
     background-color: var(--main-background-color); 
     color:var(--color-icon);
     border-radius: inherit;
+    transition: background-color var(--main-transition-duration) var(--main-transition-timing),
+    color var(--main-transition-duration) var(--main-transition-timing);
 }
 
 .team-soc-item :hover,
@@ -402,6 +403,7 @@ margin-bottom: 30px;
 }
 .team-soc-icon{
     fill:currentColor;
+    
 }
 
 
@@ -424,18 +426,19 @@ margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--color-icon);
+    fill: var(--color-icon);
+    transition: fill var(--main-transition-duration) var(--main-transition-timing),
+    border-color var() var(--main-transition-timing);
 }
 .clients-item :hover,
 .clients-item :focus {
-    color: var(--accent-color);
+    fill: var(--accent-color);
     border-color: var(--accent-color);
 }
 
 .clients-item{
     cursor: pointer;
-    transition: color var(--main-transition-duration) var(--main-transition-timing),
-    border-color var(--main-transition-duration) var(--main-transition-timing);
+    
 }
 
 .clients-icon {
@@ -530,7 +533,6 @@ margin-bottom: 20px;
         width: 44px;
         height: 44px;
         border-radius: 50%;
-        transition: background-color var(--main-transition-duration) var(--main-transition-timing);
     }
 
     .footer-soc-link {
@@ -542,6 +544,7 @@ margin-bottom: 20px;
         background-color: rgba(255, 255, 255, 0.1); 
         border-radius: inherit;
         fill:var(--header-color);
+        transition: background-color var(--main-transition-duration) var(--main-transition-timing);
     }
     
     .footer-soc-item :hover,
@@ -567,7 +570,7 @@ margin-bottom: 20px;
     }
 
     .backdrop.is-hidden .modal {
-        transform: translate(-50%, -50%) scale(0.8);
+        transform: translate(-50%, -50%) scale(0.7);
         opacity: 0;
     }
 
