@@ -235,10 +235,6 @@ img {
     transition: color var(--main-transition-duration) var(--main-transition-timing);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-    color: var(--hero-btn-color);
-}
 
 /* ----------------advantage---------------- */
 .advantage {
@@ -376,28 +372,22 @@ margin-bottom: 30px;
     margin-left: 10px;
 }
 
-.team-soc-item{
+
+.team-soc-link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
- 
-}
-
-.team-soc-link {
-    width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--main-background-color); 
     color:var(--color-icon);
-    border-radius: inherit;
     transition: background-color var(--main-transition-duration) var(--main-transition-timing),
     color var(--main-transition-duration) var(--main-transition-timing);
 }
 
-.team-soc-item :hover,
-.team-soc-item :focus{
+.team-soc-link:hover,
+.team-soc-link:focus {
     background-color: var(--accent-color);
     color: var(--main-background-color);
 }
@@ -426,13 +416,13 @@ margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: var(--color-icon);
-    transition: fill var(--main-transition-duration) var(--main-transition-timing),
-    border-color var() var(--main-transition-timing);
+    color: var(--color-icon);
+    transition: color var(--main-transition-duration) var(--main-transition-timing),
+    border-color var(--main-transition-duration) var(--main-transition-timing);
 }
 .clients-item :hover,
 .clients-item :focus {
-    fill: var(--accent-color);
+    color: var(--accent-color);
     border-color: var(--accent-color);
 }
 
@@ -529,21 +519,16 @@ margin-bottom: 20px;
         margin-left: 10px;
     }
 
-    .footer-soc-item{
+
+    .footer-soc-link {
         width: 44px;
         height: 44px;
         border-radius: 50%;
-    }
-
-    .footer-soc-link {
-        width: 100%;
-        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: rgba(255, 255, 255, 0.1); 
-        border-radius: inherit;
-        fill:var(--header-color);
+        color: var(--header-color);
         transition: background-color var(--main-transition-duration) var(--main-transition-timing);
     }
     
@@ -552,6 +537,9 @@ margin-bottom: 20px;
         background-color: var(--accent-color);
     }
     
+    .footer-soc-icon {
+        fill: currentColor;
+    }
 
     /* ----------------modal---------------- */
 
